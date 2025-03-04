@@ -1,0 +1,232 @@
+a{
+    cursor: pointer;
+}
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.play-b{
+    width: 80px;
+    cursor: pointer;
+    z-index: 1;
+}
+.light-blue{
+    background-color: #E6F2FC;
+}
+.accent-blue{
+    background-color: #2B76DD !important;
+    color: white !important;
+    display: block;
+}
+.privacy{
+    color: #4287f5;
+    font-weight: 500;
+    font-size: 1em;
+    font-family: "Jost", sans-serif;
+    text-transform: uppercase;
+}
+.risk-reference h2{
+   font-size: 40px;
+}
+.prof-img{
+    width: 100%;
+}
+.main-image h1 {
+    width: 80%;
+    font-size: 80px;
+    text-align: center;
+    top: 38%;
+}
+.up-icon{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+.up-icon-home{
+    bottom: -120px;
+    right: 100px;
+}
+.up-icon img{
+    width: 70px;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.p-center{
+    width: 80%;
+    margin: 10px auto 25px;
+}
+.fourth-section .right .wrap,
+.fourth-section .left .wrap{
+    width: auto;
+    height: auto;
+}
+.display-mobile{
+    display: none;
+}
+.third-section{
+    margin-bottom: 0;
+}
+.fourth-section{
+    margin-top: 0;
+}
+.flex-start{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.item-center{
+    align-items: center;
+}
+.item-center p{
+    margin-bottom: 0 !important;
+    margin-left: 10px;
+    font-weight: 600;
+}
+.check-img{
+    margin-top: 7px; 
+    margin-right: 10px;
+}
+.long-eight-section {
+    background-color: #408558;
+    color: white;
+}
+.profession{
+    margin-left: 60px;
+    font-weight: 600;
+}
+.list-new{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: unset;
+    padding-right: 60px;
+}
+.link-new{
+    display: flex !important;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.wrap-inner{
+    padding: 20px 120px 20px 50px;
+    text-align: left;
+}
+.relative{
+    position: relative;
+}
+.red-a1{
+    width: 180px;
+    position: absolute;
+    right: -20px;
+    bottom: -30px;
+}
+.red-a2{
+    width: 150px;
+    position: absolute;
+    left: -150px;
+    bottom: 0px;
+}
+.red-a3{
+    width: 150px;
+    position: absolute;
+    right: -150px;
+    top: -20px;
+}
+.fit{
+    width: fit-content;
+    margin: 0 auto;
+}
+.img-set img{
+    width: 160px;
+    height: 40px;
+}
+@media only screen and (max-width: 1280px){
+   .fourth-section .left,
+   .fourth-section .right {
+        padding-left: 80px;
+    } 
+    .fourth-section .right .wrap,
+    .fourth-section .left .wrap{
+        width: auto;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .blue-nineteen-section .wrap,
+    .blue-twvel-section .wrap,
+    .blue-seventeen-section .wrap,
+    .blue-eleven-section .wrap,
+    .blue-second-section .wrap,
+    .blue-fourth-section .wrap,
+    .blue-seven-section .wrap,
+    .content-wrap,
+    .blue-sixteen-section .wrap,
+    .second-section h2,
+    .seventh-section .wrap,
+    .nine-section .wrap,
+    .eleven-section .wrap,
+    .fourth-section .right .wrap,
+    .fourth-section .left .wrap,
+    .long-third-second .wrap,
+    .long-seventh-section .wrap,
+    .custom-container,
+    .long-twvel-section .box{
+        width: auto;
+    }
+    .link {
+        font-size: 12px;
+        display: block;
+    }
+    .prof-img{
+        width: 100px;
+    }
+    .main-image h1 {
+        color: #fff;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%);
+        width: 80%;
+        font-size: 42px;
+    }
+    .text-center-sm{
+        text-align: center;
+    }
+    .up-icon{
+        bottom: 10px;
+        right: 10px;
+    }
+    .up-icon img{
+        width: 60px;
+    }
+    .blue-third-section .img-wrap {
+        height: 200px;
+    }
+    .fourth-section .left,
+    .fourth-section .right {
+        padding-left: unset;
+        padding: 50px 25px;
+
+    }
+    .fourth-section .left .wrap,
+    .fourth-section .right .wrap {
+        height: auto;
+    }
+    .shop-now{
+        padding: 10px;
+        text-align: center;
+        font-size: 18px;
+    }
+    .display-desktop{
+        display: none;
+    }
+    .display-mobile{
+        display: flex;
+    }
+}

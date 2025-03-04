@@ -1,0 +1,34 @@
+.hero-image{
+    background-image: url("../images/hero.jpeg");
+    height:342px;
+    width: 100%;
+    background-size: cover;
+    background-position: 0px -485px;
+    position: relative;
+}
+.hero-text{
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+.hero-image::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    content:"";
+    background: rgba(19, 36, 62, 0.4);
+    width: 100%;
+    height: 100%;
+}
+.blog-Second-Section{
+    text-align: center;
+    margin-top: 50px;
+}
+.blog-Second-Section p{
+    padding-left: 200px;
+    padding-right: 200px;
+    font-weight: 600;
+}
