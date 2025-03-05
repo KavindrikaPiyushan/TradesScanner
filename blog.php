@@ -1,46 +1,65 @@
-<?php include 'inc.header.php' ?>
+<?php include 'inc.header.php'; ?>
 
+<!-- Hero Section -->
+<section class="hero-image">
+    <div class="hero-text">
+        <h1>Tradesscanner</h1>
+        <h5>BLOG & INSIGHTS</h5>
+    </div>
+</section>
 
-    <section class="hero-image">
-        <div class="hero-text">
-            <h1>Tradesscanner</h1>
-            <h5>BLOG & INSIGHTS</h5>
-        </div>    
-              
-    </section>
-
-    <section class="blog-Second-Section">
-        <div class="container">
-            <div class="row ">
-                <h5>YOUR EDGE IN THE MARKET</h5>
-                <h2>Explore our latest articles, tips and updates</h2>
-                <p>Discover Expert Insights, Industry Trends And Helpful Guides To Keep You Informed. Stay Updatest With Our Latest Posts, Featuring Tips, Stories, And Valuable Knowledge For You.</p>
-            </div>
+<!-- Introduction Section -->
+<section class="blog-second-section">
+    <div class="container">
+        <div class="row">
+            <h5>YOUR EDGE IN THE MARKET</h5>
+            <h2>Explore our latest articles, tips, and updates</h2>
+            <p>Discover Expert Insights, Industry Trends, and Helpful Guides to Keep You Informed. Stay Updated With Our Latest Posts, Featuring Tips, Stories, and Valuable Knowledge for You.</p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="blogs-Section">
-        <div class="filterTools">
-            <div class="categories">
-               
-            </div>
-            <div class="sorting">
-
-            </div>
+<!-- Blogs Section -->
+<section class="blogs-section container">
+    <div class="filter-tools">
+        <div class="categories">
+            <?php
+            $categories = [
+                "Finance", 
+                "Stock Market", 
+                "Cryptocurrency", 
+                "Real Estate", 
+                "Technology", 
+                "Investment Tips"
+            ];
+            
+            foreach ($categories as $category) {
+                echo "<button class='category-btn' data-category='" . htmlspecialchars($category) . "'>$category</button>";
+            }
+            ?>
         </div>
-        <div class="blogs">
-        <div class="firstBlog">
+        <div class="sorting">
+    <div class="language">
+        <p>Sort by Language</p>
+        
+            <select name="language" id="language-select" class="custom-select">
+                <option value="English" data-image="./images/eng.png">English</option>
+                <option value="Hindi" data-image="">Hindi</option>
+                <option value="Marathi" data-image="">Marathi</option>
+            </select>
+    
+    </div>
+</div>
+    </div>
 
+    <div class="blogs">
+        <div class="first-blog">
+            <!-- Featured blog post -->
         </div>
-        <div class="otherBlogCover">
-
+        <div class="other-blog-cover">
+            <!-- Other blog posts -->
         </div>
-        </div>
+    </div>
+</section>
 
-    </section>
-
-
-
-
-
-<?php include 'inc.footer.php' ?>
+<?php include 'inc.footer.php'; ?>

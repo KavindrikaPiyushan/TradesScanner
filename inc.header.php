@@ -81,3 +81,4 @@
 
 
     </header>
+    <script src="./js/category-filter.js"></script>
