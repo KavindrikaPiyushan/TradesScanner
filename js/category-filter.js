@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Create custom dropdown with images
     function createCustomDropdown() {
-        // Create a container for the custom dropdown
+    // Create a container for the custom dropdown
         const customDropdown = document.createElement('div');
         customDropdown.className = 'language-dropdown';
         
@@ -65,6 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
             optionsList.appendChild(listItem);
         });
         
+
         // Initial selected option
         function updateSelectedOption() {
             const selectedOptionIndex = languageSelect.selectedIndex;
@@ -110,3 +111,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
     createCustomDropdown();
 });
+
+
+
+
+
+
+
+
