@@ -2,7 +2,7 @@
 // Dummy data for blog posts
 $blogPosts = [
     [
-        'image' => './images/firstBlog.jpeg',
+        'image' => './images/blog2.jpeg',
         'posted' => 'Today',
         'reactions' => 354,
         'authorImage' => './images/12.png',
@@ -13,20 +13,9 @@ $blogPosts = [
         'flag' => './images/french.webp',
         'readTime' => '3 min read'
     ],
+    
     [
-        'image' => './images/firstBlog.jpeg',
-        'posted' => 'Yesterday',
-        'reactions' => 287,
-        'authorImage' => './images/12.png',
-        'authorName' => 'MARCUS RUHNAU',
-        'title' => 'A pretium volutpat tincidunt dignissim diam. Porta nec sit ut lobortis massa rutrum duis. Posuere mauris ut pellentesque magna sit risus donec.',
-        'description' => 'Dictum Sed Purus Ultrices Mauris Ornare. Ac Quis Sed Egestas Egestas Enim In Interdum Sit. Euismod Urna Posuere ld Augue Vulputate Sed In. Tempus Aliquet Fames Vel Nibh Malesuada. Euismod Et Metus Tempus Rhoncus Tortor Bibendum Eget. Semper Enim Mauris Gravida Risus Lectus Massa Purus Egestas Fusce. Auctor Elementum Sollicitudin ld Amet. Tempus Malesuada Velit Quis Egestas. Gravida In Ac Erat Risus Vitae. Enim Volutpat Dis Vulputate Mattis Urna Donec Turpis. Duis Mauris Tellus Sem Facilisi Tincidunt Habitasse In Vul utate Ut. Lacus Sem er Sit Vestibulum.',
-        'comments' => 142,
-        'flag' => './images/french.webp',
-        'readTime' => '3 min read'
-    ],
-    [
-        'image' => './images/firstBlog.jpeg',
+        'image' => './images/blog3.jpeg',
         'posted' => '2 days ago',
         'reactions' => 412,
         'authorImage' => './images/12.png',
@@ -38,7 +27,7 @@ $blogPosts = [
         'readTime' => '3 min read'
     ],
     [
-        'image' => './images/firstBlog.jpeg',
+        'image' => './images/blog4.jpeg',
         'posted' => '3 days ago',
         'reactions' => 198,
         'authorImage' => './images/12.png',
@@ -50,7 +39,7 @@ $blogPosts = [
         'readTime' => '3 min read'
     ],
     [
-        'image' => './images/firstBlog.jpeg',
+        'image' => './images/blog5.jpeg',
         'posted' => '4 days ago',
         'reactions' => 327,
         'authorImage' => './images/12.png',
@@ -62,7 +51,7 @@ $blogPosts = [
         'readTime' => '3 min read'
     ],
     [
-        'image' => './images/firstBlog.jpeg',
+        'image' => './images/blog6.jpeg',
         'posted' => '5 days ago',
         'reactions' => 245,
         'authorImage' => './images/12.png',
@@ -72,7 +61,19 @@ $blogPosts = [
         'comments' => 132,
         'flag' => './images/french.webp',
         'readTime' => '3 min read'
-    ]
+    ],
+    [
+        'image' => './images/blog7.jpeg',
+        'posted' => 'Yesterday',
+        'reactions' => 287,
+        'authorImage' => './images/12.png',
+        'authorName' => 'MARCUS RUHNAU',
+        'title' => 'A pretium volutpat tincidunt dignissim diam. Porta nec sit ut lobortis massa rutrum duis. Posuere mauris ut pellentesque magna sit risus donec.',
+        'description' => 'Dictum Sed Purus Ultrices Mauris Ornare. Ac Quis Sed Egestas Egestas Enim In Interdum Sit. Euismod Urna Posuere ld Augue Vulputate Sed In. Tempus Aliquet Fames Vel Nibh Malesuada. Euismod Et Metus Tempus Rhoncus Tortor Bibendum Eget. Semper Enim Mauris Gravida Risus Lectus Massa Purus Egestas Fusce. Auctor Elementum Sollicitudin ld Amet. Tempus Malesuada Velit Quis Egestas. Gravida In Ac Erat Risus Vitae. Enim Volutpat Dis Vulputate Mattis Urna Donec Turpis. Duis Mauris Tellus Sem Facilisi Tincidunt Habitasse In Vul utate Ut. Lacus Sem er Sit Vestibulum.',
+        'comments' => 142,
+        'flag' => './images/french.webp',
+        'readTime' => '3 min read'
+    ],
 ];
 
 // Function to render a single blog post

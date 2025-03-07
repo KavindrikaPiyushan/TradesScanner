@@ -1,4 +1,22 @@
-<?php include 'inc.header.php'; ?>
+<?php include 'inc.header.php'; include 'blog-component.php'; include 'pagination-component.php';
+
+$itemsPerPage = 3; // Number of blog posts per page
+$totalItems = count($blogPosts); // Total number of blog posts
+$totalPages = ceil($totalItems / $itemsPerPage);
+
+// Get current page from URL parameter, default to page 1
+$currentPage = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+$currentPage = max(1, min($currentPage, $totalPages)); // Ensure valid page number
+
+// Calculate the slice of posts to display on the current page
+$offset = ($currentPage - 1) * $itemsPerPage;
+$currentPagePosts = array_slice($blogPosts, $offset, $itemsPerPage);
+?>
+
+
+
+
+
 
 <!-- Hero Section -->
 <section class="hero-image">
@@ -122,313 +140,14 @@
             </div>
         </div>
         <div class="other-blog-cover">
-        <div class="other-blog">
-            <img src="./images/firstBlog.jpeg" alt="" class="otherBlogImg">
-            <div class="blogDescriptionCover otherBlogDescriptionCov">
-                <div class="otherBlogHead">
-                   
-                    <div class="author">
-                        <p>Posted: </p>
-                        <h6>Today</h6>
-                    </div>
-
-                    <div class="reacts">
-                        <p>354</p>
-                        <img src="./images/Greenheart.png" alt="" class="heartIcon">
-                    </div>
-                </div>
-                <div class="otherBlogAuthorHead">
-                <img src="./images/12.png" alt="" class="authorImg">
-                    <div class="author">
-                        <h5>MARCUS RUHNAU</h5>
-                    </div>
-                </div>
-                <h3 class="otherBlogTitle">
-                    A pretium volutpat tincidunt
-                    dignissim diam. Porta nec sit ut
-                    lobortis massa rutrum duis. Posuere
-                    mauris ut pellentesque magna sit
-                    risus donec.
-                </h3>
-                <p class="otherblogDescription">
-                    Dictum Sed Purus Ultrices Mauris Ornare. Ac Quis Sed Egestas
-                    Egestas Enim In Interdum Sit. Euismod Urna Posuere ld Augue
-                    Vulputate Sed In. Tempus Aliquet Fames Vel Nibh Malesuada.
-                    Euismod Et Metus Tempus Rhoncus Tortor Bibendum Eget. Semper
-                    Enim Mauris Gravida Risus Lectus Massa Purus Egestas Fusce.
-                    Auctor Elementum Sollicitudin ld Amet. Tempus Malesuada Velit
-                    Quis Egestas. Gravida In Ac Erat Risus Vitae. Enim Volutpat Dis
-                    Vulputate Mattis Urna Donec Turpis. Duis Mauris Tellus Sem Facilisi
-                    Tincidunt Habitasse In Vul utate Ut. Lacus Sem er Sit Vestibulum.
-                </p>
-                <div class="blogFooter">
-                    <div class="comments">
-                        <img src="./images/comment.png" alt="" class="commentIcon">
-                        <p>186 Comments</p>
-                    </div>
-                    <div class="flag">
-                        <img src="./images/french.webp" alt="" class="flagImg">
-                        <p>3 min read</p>
-                    </div>
-                </div>
-            </div>
+        <?php
+            echo renderBlogSection($blogPosts);
+            ?>
         </div>
-        <div class="other-blog">
-            <img src="./images/firstBlog.jpeg" alt="" class="otherBlogImg">
-            <div class="blogDescriptionCover otherBlogDescriptionCov">
-                <div class="otherBlogHead">
-                   
-                    <div class="author">
-                        <p>Posted: </p>
-                        <h6>Today</h6>
-                    </div>
-
-                    <div class="reacts">
-                        <p>354</p>
-                        <img src="./images/Greenheart.png" alt="" class="heartIcon">
-                    </div>
-                </div>
-                <div class="otherBlogAuthorHead">
-                <img src="./images/12.png" alt="" class="authorImg">
-                    <div class="author">
-                        <h5>MARCUS RUHNAU</h5>
-                    </div>
-                </div>
-                <h3 class="otherBlogTitle">
-                    A pretium volutpat tincidunt
-                    dignissim diam. Porta nec sit ut
-                    lobortis massa rutrum duis. Posuere
-                    mauris ut pellentesque magna sit
-                    risus donec.
-                </h3>
-                <p class="otherblogDescription">
-                    Dictum Sed Purus Ultrices Mauris Ornare. Ac Quis Sed Egestas
-                    Egestas Enim In Interdum Sit. Euismod Urna Posuere ld Augue
-                    Vulputate Sed In. Tempus Aliquet Fames Vel Nibh Malesuada.
-                    Euismod Et Metus Tempus Rhoncus Tortor Bibendum Eget. Semper
-                    Enim Mauris Gravida Risus Lectus Massa Purus Egestas Fusce.
-                    Auctor Elementum Sollicitudin ld Amet. Tempus Malesuada Velit
-                    Quis Egestas. Gravida In Ac Erat Risus Vitae. Enim Volutpat Dis
-                    Vulputate Mattis Urna Donec Turpis. Duis Mauris Tellus Sem Facilisi
-                    Tincidunt Habitasse In Vul utate Ut. Lacus Sem er Sit Vestibulum.
-                </p>
-                <div class="blogFooter">
-                    <div class="comments">
-                        <img src="./images/comment.png" alt="" class="commentIcon">
-                        <p>186 Comments</p>
-                    </div>
-                    <div class="flag">
-                        <img src="./images/french.webp" alt="" class="flagImg">
-                        <p>3 min read</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="other-blog">
-            <img src="./images/firstBlog.jpeg" alt="" class="otherBlogImg">
-            <div class="blogDescriptionCover otherBlogDescriptionCov">
-                <div class="otherBlogHead">
-                   
-                    <div class="author">
-                        <p>Posted: </p>
-                        <h6>Today</h6>
-                    </div>
-
-                    <div class="reacts">
-                        <p>354</p>
-                        <img src="./images/Greenheart.png" alt="" class="heartIcon">
-                    </div>
-                </div>
-                <div class="otherBlogAuthorHead">
-                <img src="./images/12.png" alt="" class="authorImg">
-                    <div class="author">
-                        <h5>MARCUS RUHNAU</h5>
-                    </div>
-                </div>
-                <h3 class="otherBlogTitle">
-                    A pretium volutpat tincidunt
-                    dignissim diam. Porta nec sit ut
-                    lobortis massa rutrum duis. Posuere
-                    mauris ut pellentesque magna sit
-                    risus donec.
-                </h3>
-                <p class="otherblogDescription">
-                    Dictum Sed Purus Ultrices Mauris Ornare. Ac Quis Sed Egestas
-                    Egestas Enim In Interdum Sit. Euismod Urna Posuere ld Augue
-                    Vulputate Sed In. Tempus Aliquet Fames Vel Nibh Malesuada.
-                    Euismod Et Metus Tempus Rhoncus Tortor Bibendum Eget. Semper
-                    Enim Mauris Gravida Risus Lectus Massa Purus Egestas Fusce.
-                    Auctor Elementum Sollicitudin ld Amet. Tempus Malesuada Velit
-                    Quis Egestas. Gravida In Ac Erat Risus Vitae. Enim Volutpat Dis
-                    Vulputate Mattis Urna Donec Turpis. Duis Mauris Tellus Sem Facilisi
-                    Tincidunt Habitasse In Vul utate Ut. Lacus Sem er Sit Vestibulum.
-                </p>
-                <div class="blogFooter">
-                    <div class="comments">
-                        <img src="./images/comment.png" alt="" class="commentIcon">
-                        <p>186 Comments</p>
-                    </div>
-                    <div class="flag">
-                        <img src="./images/french.webp" alt="" class="flagImg">
-                        <p>3 min read</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="other-blog">
-            <img src="./images/firstBlog.jpeg" alt="" class="otherBlogImg">
-            <div class="blogDescriptionCover otherBlogDescriptionCov">
-                <div class="otherBlogHead">
-                   
-                    <div class="author">
-                        <p>Posted: </p>
-                        <h6>Today</h6>
-                    </div>
-
-                    <div class="reacts">
-                        <p>354</p>
-                        <img src="./images/Greenheart.png" alt="" class="heartIcon">
-                    </div>
-                </div>
-                <div class="otherBlogAuthorHead">
-                <img src="./images/12.png" alt="" class="authorImg">
-                    <div class="author">
-                        <h5>MARCUS RUHNAU</h5>
-                    </div>
-                </div>
-                <h3 class="otherBlogTitle">
-                    A pretium volutpat tincidunt
-                    dignissim diam. Porta nec sit ut
-                    lobortis massa rutrum duis. Posuere
-                    mauris ut pellentesque magna sit
-                    risus donec.
-                </h3>
-                <p class="otherblogDescription">
-                    Dictum Sed Purus Ultrices Mauris Ornare. Ac Quis Sed Egestas
-                    Egestas Enim In Interdum Sit. Euismod Urna Posuere ld Augue
-                    Vulputate Sed In. Tempus Aliquet Fames Vel Nibh Malesuada.
-                    Euismod Et Metus Tempus Rhoncus Tortor Bibendum Eget. Semper
-                    Enim Mauris Gravida Risus Lectus Massa Purus Egestas Fusce.
-                    Auctor Elementum Sollicitudin ld Amet. Tempus Malesuada Velit
-                    Quis Egestas. Gravida In Ac Erat Risus Vitae. Enim Volutpat Dis
-                    Vulputate Mattis Urna Donec Turpis. Duis Mauris Tellus Sem Facilisi
-                    Tincidunt Habitasse In Vul utate Ut. Lacus Sem er Sit Vestibulum.
-                </p>
-                <div class="blogFooter">
-                    <div class="comments">
-                        <img src="./images/comment.png" alt="" class="commentIcon">
-                        <p>186 Comments</p>
-                    </div>
-                    <div class="flag">
-                        <img src="./images/french.webp" alt="" class="flagImg">
-                        <p>3 min read</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="other-blog">
-            <img src="./images/firstBlog.jpeg" alt="" class="otherBlogImg">
-            <div class="blogDescriptionCover otherBlogDescriptionCov">
-                <div class="otherBlogHead">
-                   
-                    <div class="author">
-                        <p>Posted: </p>
-                        <h6>Today</h6>
-                    </div>
-
-                    <div class="reacts">
-                        <p>354</p>
-                        <img src="./images/Greenheart.png" alt="" class="heartIcon">
-                    </div>
-                </div>
-                <div class="otherBlogAuthorHead">
-                <img src="./images/12.png" alt="" class="authorImg">
-                    <div class="author">
-                        <h5>MARCUS RUHNAU</h5>
-                    </div>
-                </div>
-                <h3 class="otherBlogTitle">
-                    A pretium volutpat tincidunt
-                    dignissim diam. Porta nec sit ut
-                    lobortis massa rutrum duis. Posuere
-                    mauris ut pellentesque magna sit
-                    risus donec.
-                </h3>
-                <p class="otherblogDescription">
-                    Dictum Sed Purus Ultrices Mauris Ornare. Ac Quis Sed Egestas
-                    Egestas Enim In Interdum Sit. Euismod Urna Posuere ld Augue
-                    Vulputate Sed In. Tempus Aliquet Fames Vel Nibh Malesuada.
-                    Euismod Et Metus Tempus Rhoncus Tortor Bibendum Eget. Semper
-                    Enim Mauris Gravida Risus Lectus Massa Purus Egestas Fusce.
-                    Auctor Elementum Sollicitudin ld Amet. Tempus Malesuada Velit
-                    Quis Egestas. Gravida In Ac Erat Risus Vitae. Enim Volutpat Dis
-                    Vulputate Mattis Urna Donec Turpis. Duis Mauris Tellus Sem Facilisi
-                    Tincidunt Habitasse In Vul utate Ut. Lacus Sem er Sit Vestibulum.
-                </p>
-                <div class="blogFooter">
-                    <div class="comments">
-                        <img src="./images/comment.png" alt="" class="commentIcon">
-                        <p>186 Comments</p>
-                    </div>
-                    <div class="flag">
-                        <img src="./images/french.webp" alt="" class="flagImg">
-                        <p>3 min read</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="other-blog">
-            <img src="./images/firstBlog.jpeg" alt="" class="otherBlogImg">
-            <div class="blogDescriptionCover otherBlogDescriptionCov">
-                <div class="otherBlogHead">
-                   
-                    <div class="author">
-                        <p>Posted: </p>
-                        <h6>Today</h6>
-                    </div>
-
-                    <div class="reacts">
-                        <p>354</p>
-                        <img src="./images/Greenheart.png" alt="" class="heartIcon">
-                    </div>
-                </div>
-                <div class="otherBlogAuthorHead">
-                <img src="./images/12.png" alt="" class="authorImg">
-                    <div class="author">
-                        <h5>MARCUS RUHNAU</h5>
-                    </div>
-                </div>
-                <h3 class="otherBlogTitle">
-                    A pretium volutpat tincidunt
-                    dignissim diam. Porta nec sit ut
-                    lobortis massa rutrum duis. Posuere
-                    mauris ut pellentesque magna sit
-                    risus donec.
-                </h3>
-                <p class="otherblogDescription">
-                    Dictum Sed Purus Ultrices Mauris Ornare. Ac Quis Sed Egestas
-                    Egestas Enim In Interdum Sit. Euismod Urna Posuere ld Augue
-                    Vulputate Sed In. Tempus Aliquet Fames Vel Nibh Malesuada.
-                    Euismod Et Metus Tempus Rhoncus Tortor Bibendum Eget. Semper
-                    Enim Mauris Gravida Risus Lectus Massa Purus Egestas Fusce.
-                    Auctor Elementum Sollicitudin ld Amet. Tempus Malesuada Velit
-                    Quis Egestas. Gravida In Ac Erat Risus Vitae. Enim Volutpat Dis
-                    Vulputate Mattis Urna Donec Turpis. Duis Mauris Tellus Sem Facilisi
-                    Tincidunt Habitasse In Vul utate Ut. Lacus Sem er Sit Vestibulum.
-                </p>
-                <div class="blogFooter">
-                    <div class="comments">
-                        <img src="./images/comment.png" alt="" class="commentIcon">
-                        <p>186 Comments</p>
-                    </div>
-                    <div class="flag">
-                        <img src="./images/french.webp" alt="" class="flagImg">
-                        <p>3 min read</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
+        <div class="pagination">
+            <section class="pagination-section">
+                <?php echo renderPagination($currentPage, $totalPages, 'index.php', 5); ?>
+            </section>
         </div>
     </div>
 
