@@ -447,6 +447,13 @@
 .categoryLabel {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
+.single-post-over{
+  margin-top: 20px;
+}
+.navigation{
+  font-weight: 500;
+}
  
 
 
