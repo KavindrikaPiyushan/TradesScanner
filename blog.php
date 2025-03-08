@@ -1,6 +1,6 @@
 <?php include 'inc.header.php'; include 'blog-component.php'; include 'pagination-component.php';
 
-$itemsPerPage = 3; // Number of blog posts per page
+$itemsPerPage = 1; // Number of blog posts per page
 $totalItems = count($blogPosts); // Total number of blog posts
 $totalPages = ceil($totalItems / $itemsPerPage);
 
@@ -90,7 +90,11 @@ $currentPagePosts = array_slice($blogPosts, $offset, $itemsPerPage);
     </div>
 
     <div class="blogs">
+        
         <div class="first-blog">
+            <div class="categoryLabel">
+                   Finance
+            </div>
             <img src="./images/firstBlog.jpeg" alt="" class="firstBlogImg">
             <div class="blogDescriptionCover">
                 <div class="blogHead">

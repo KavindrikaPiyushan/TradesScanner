@@ -2,26 +2,16 @@
 /**
  * Dynamic Pagination Component
  * 
+ * Shows first two and last two page numbers when total pages > 4
+ * 
  * @param int $currentPage Current active page
  * @param int $totalPages Total number of pages
  * @param string $baseUrl Base URL for pagination links (optional)
- * @param int $visiblePages Number of page links to show (optional, default 5)
  * @return string HTML for pagination
  */
-function renderPagination($currentPage, $totalPages, $baseUrl = '#', $visiblePages = 5) {
+function renderPagination($currentPage, $totalPages, $baseUrl = '#') {
     // Validate inputs
     $currentPage = max(1, min($currentPage, $totalPages));
-    $visiblePages = max(3, min($visiblePages, $totalPages));
-    
-    // Calculate the range of visible page numbers
-    $halfVisible = floor($visiblePages / 2);
-    $startPage = max(1, min($currentPage - $halfVisible, $totalPages - $visiblePages + 1));
-    $endPage = min($totalPages, $startPage + $visiblePages - 1);
-    
-    // Adjust if we're at the end of the range
-    if ($endPage - $startPage + 1 < $visiblePages) {
-        $startPage = max(1, $endPage - $visiblePages + 1);
-    }
     
     // Start building the pagination HTML
     $html = '<div class="pagination">';
@@ -31,24 +21,34 @@ function renderPagination($currentPage, $totalPages, $baseUrl = '#', $visiblePag
     $html .= '<a href="' . ($currentPage > 1 ? $baseUrl . '?page=1' : '#') . '" class="first-page' . $prevDisabled . '" title="First Page">&laquo;&laquo;</a>';
     $html .= '<a href="' . ($currentPage > 1 ? $baseUrl . '?page=' . ($currentPage - 1) : '#') . '" class="prev-page' . $prevDisabled . '" title="Previous Page">&laquo;</a>';
     
-    // Page numbers
-    if ($startPage > 1) {
-        $html .= '<a href="' . $baseUrl . '?page=1">1</a>';
-        if ($startPage > 2) {
-            $html .= '<a class="ellipsis">...</a>';
-        }
-    }
-    
-    for ($i = $startPage; $i <= $endPage; $i++) {
+    // Always show first two pages
+    for ($i = 1; $i <= min(2, $totalPages); $i++) {
         $activeClass = ($i == $currentPage) ? ' class="active"' : '';
         $html .= '<a href="' . $baseUrl . '?page=' . $i . '"' . $activeClass . '>' . $i . '</a>';
     }
     
-    if ($endPage < $totalPages) {
-        if ($endPage < $totalPages - 1) {
+    // If current page is not in first two or last two, show ellipsis and current page
+    if ($totalPages > 4 && $currentPage > 2 && $currentPage < $totalPages - 1) {
+        if ($currentPage > 3) {
             $html .= '<a class="ellipsis">...</a>';
         }
-        $html .= '<a href="' . $baseUrl . '?page=' . $totalPages . '">' . $totalPages . '</a>';
+        
+        $html .= '<a href="' . $baseUrl . '?page=' . $currentPage . '" class="active">' . $currentPage . '</a>';
+        
+        if ($currentPage < $totalPages - 2) {
+            $html .= '<a class="ellipsis">...</a>';
+        }
+    } elseif ($totalPages > 4) {
+        // Just show ellipsis between first two and last two
+        $html .= '<a class="ellipsis">...</a>';
+    }
+    
+    // Always show last two pages if total pages > 2
+    if ($totalPages > 2) {
+        for ($i = max(3, $totalPages - 1); $i <= $totalPages; $i++) {
+            $activeClass = ($i == $currentPage) ? ' class="active"' : '';
+            $html .= '<a href="' . $baseUrl . '?page=' . $i . '"' . $activeClass . '>' . $i . '</a>';
+        }
     }
     
     // Next page and last page buttons

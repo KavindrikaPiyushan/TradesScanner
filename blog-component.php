@@ -80,6 +80,9 @@ $blogPosts = [
 function renderBlogPost($post) {
     return '
     <div class="other-blog">
+        <div class="categoryLabel">
+                   Finance
+            </div>
         <img src="' . $post['image'] . '" alt="" class="otherBlogImg">
         <div class="blogDescriptionCover otherBlogDescriptionCov">
             <div class="otherBlogHead">

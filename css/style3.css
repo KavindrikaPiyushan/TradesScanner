@@ -209,6 +209,7 @@
 }
 
 .blogs .first-blog,.other-blog {
+  position: relative;
   display: flex;
   background-color: #f5f5f5;
   border-radius: 8px;
@@ -294,6 +295,8 @@
   object-fit: cover;
   border-radius: 8px 0 0 8px;
   transition: object-fit 3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+  position: relative;
 }
 
 .first-blog:hover .firstBlogImg {
@@ -378,12 +381,15 @@
 .pagination a{
   color: #333;
   float: left;
-  padding: 8px 16px;
+  padding: 6px 16px;
   text-decoration: none;
   transition: background-color .3s;
   border: none;
   border-radius: 100%;
   margin: 0 4px;
+  font-weight: bold;
+  font-size: 22px;
+  
 
 }
 
@@ -399,7 +405,7 @@
 }
 
 .pagination a.disabled {
-  color: #ccc;
+  
   cursor: not-allowed;
   
 }
@@ -410,9 +416,37 @@
   cursor: default;
 }
 
+.next-page,.last-page,.first-page,.prev-page{
+  background-color: #ccc;
 
+}
+
+.next-page{
+  margin-left: 30px !important;
+}
+
+.prev-page{
+  margin-right: 30px !important; 
+}
   
+.categoryLabel {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color:#2B76DD; 
+  color: white;
+  padding: 6px 18px;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 2; 
 
+}
+
+
+.categoryLabel {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
  
 
 
