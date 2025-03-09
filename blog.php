@@ -110,7 +110,9 @@ $currentPagePosts = array_slice($blogPosts, $offset, $itemsPerPage);
 
                     <div class="reacts">
                         <p>354</p>
-                        <img src="./images/Greenheart.png" alt="" class="heartIcon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="heartIcon" viewBox="0 0 24 24" fill="green" stroke="green" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1 8 8 8-8 1-1a5.5 5.5 0 0 0 0-7.8z"></path>
+</svg>
                     </div>
                 </div>
                 <h3 class="blogTitle">
