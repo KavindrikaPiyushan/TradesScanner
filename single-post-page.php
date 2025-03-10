@@ -2,7 +2,8 @@
 <section class="single-post-cover">
     <div class="container">
 
-        <div class="navigation">Home / Blog/ Mastering the Markets: Top 5 Strategies Every Trader Should Know</div>
+        <div class="navigation">Home / Blog/ <strong> Mastering the Markets: Top 5 Strategies Every Trader Should
+                Know</strong></div>
         <div class="single-post">
             <div class="post-head">
                 <div class="post-title">
@@ -16,13 +17,13 @@
                     with our latest posts, featuring tips, stories, and valuable knowledge for you.
                 </p>
                 <img src="./images/blog7.jpeg" alt="" class="single-blog-img">
-                <div class="single-blog-description-cover">
+                <div class="single-blog-description-cover container">
 
-                    <div class="single-blog-description">
+                    <div class="single-blog-description container ">
 
 
 
-                        <div class="blogHead">
+                        <div class="blogHead ">
                             <div class="author-cover">
                                 <img src="./images/12.png" alt="" class="authorImg">
                                 <div class="author">
@@ -132,7 +133,7 @@
                             mauris tellus sem facilisi tincidunt habitasse in vulputate ut. Lacus semper sit vestibulum
                             id.</p>
 
-                        <div class="comment-section">
+                        <div class="comment-section ">
                             <div class="share-section">
                                 <div class="reacts">
                                     <p>354</p>
@@ -162,7 +163,7 @@
                             <img src="./images/comment.png" alt="" class="commentIcon">
                             <p>186 Comments</p>
                         </div>
-                        <div class="comment-box">
+                        <div class="comment-box  ">
                             <div class="write-comment">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#13243E"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -175,40 +176,291 @@
                             <button class="post-btn">Post Comment</button>
 
                         </div>
-                        <div class="sample-comments-cover">
-                            
-                            <div class="comment-head">
-                                <img src="./images/profilePic.jpeg" alt="" class="profile-pic">
-                                <h6 class="name">Ann Doe</h6>
-                                <p class="date">Today</p>
-                            </div>
-                            <div class="inner-content">
-                            <p class="comment-content">“Ut porttitor suspendisse mattis quam quam at netus urna. Neque
-                                cursus venenatis sed mi hendrerit consequat. Massa quis rutrum sit orci morbi eros sit.
-                                Elit morbi dolor elementum ipsum. Sapien curabitur leo elementum commodo justo id lectus
-                                nunc dis”</p>
-                            <div class="like-section">
-                                <div class="like">
-                                <img src="./images/like.png" alt="" class="like-icon">
-                                <p>690</p>
-                                </div>
-                                <div class="dislike">
-                                <img src="./images/dislike.png" alt="" class="dislike-icon">
-                                <p>0</p>
-                                </div>
-                                <button class="comment-reply-btn">Reply</button>
-                            </div>
-                            <div class="reply-section">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#13243E"
-                                    stroke-width="2" class="expand">
-                                    <path d="M6 9l6 6 6-6" />
-                                </svg>
-                                <p> 3 replies</p>
+                        <div class="other-comment-section">
+                            <div class="sample-comments-cover">
 
+                                <div class="comment-head">
+                                    <img src="./images/profilePic.jpeg" alt="" class="profile-pic">
+                                    <h6 class="name">Ann Doe</h6>
+                                    <p class="date">Today</p>
+                                </div>
+                                <div class="inner-content">
+                                    <p class="comment-content">“Ut porttitor suspendisse mattis quam quam at netus urna.
+                                        Neque
+                                        cursus venenatis sed mi hendrerit consequat. Massa quis rutrum sit orci morbi
+                                        eros sit.
+                                        Elit morbi dolor elementum ipsum. Sapien curabitur leo elementum commodo justo
+                                        id lectus
+                                        nunc dis”</p>
+                                    <div class="like-section">
+                                        <div class="like">
+                                            <img src="./images/like.png" alt="" class="like-icon">
+                                            <p>690</p>
+                                        </div>
+                                        <div class="dislike">
+                                            <img src="./images/dislike.png" alt="" class="dislike-icon">
+                                            <p>0</p>
+                                        </div>
+                                        <button class="comment-reply-btn">Reply</button>
+                                    </div>
+                                    <div class="reply-section">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                            stroke="#13243E" stroke-width="2" class="expand">
+                                            <path d="M6 9l6 6 6-6" />
+                                        </svg>
+                                        <p> 3 replies</p>
+
+                                    </div>
+                                </div>
                             </div>
+                            <div class="sample-comments-cover">
+
+                                <div class="comment-head">
+                                    <img src="./images/profilePic.jpeg" alt="" class="profile-pic">
+                                    <h6 class="name">Ann Doe</h6>
+                                    <p class="date"> Today</p>
+                                </div>
+                                <div class="inner-content">
+                                    <p class="comment-content">“Ut porttitor suspendisse mattis quam quam at netus urna.
+                                        Neque
+                                        cursus venenatis sed mi hendrerit consequat. Massa quis rutrum sit orci morbi
+                                        eros sit.
+                                        Elit morbi dolor elementum ipsum. Sapien curabitur leo elementum commodo justo
+                                        id lectus
+                                        nunc dis”</p>
+                                    <div class="like-section">
+                                        <div class="like">
+                                            <img src="./images/like.png" alt="" class="like-icon">
+                                            <p>690</p>
+                                        </div>
+                                        <div class="dislike">
+                                            <img src="./images/dislike.png" alt="" class="dislike-icon">
+                                            <p>0</p>
+                                        </div>
+                                        <button class="comment-reply-btn">Reply</button>
+                                    </div>
+                                    <div class="reply-section">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                            stroke="#13243E" stroke-width="2" class="expand">
+                                            <path d="M6 9l6 6 6-6" />
+                                        </svg>
+                                        <p> 3 replies</p>
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        
+                        <div class="related-products-section ">
+                            <div class="title-section">
+                                <h2 class="related-products-title">Related Products</h2>
+                                <div class="all-products-btn view-all-products"><a class="">View All Products </a> <svg
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M9 6l6 6-6 6" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="related-products-cover container ">
+                                <div class="product-card">
+                                    <img src="./images/crd1.jpeg" alt="" class="card-img">
+                                    <div class="crd-description">
+                                        <h6>Option Screener Basic</h6>
+                                        <h5>49,00 €</h5>
+                                        <p class="product-details">This product allows you to scan Cash Secured Puts,
+                                            Bear Calls and Strangles. Additionally there...</p>
+
+                                        <div class="read-more">
+                                            <p>Read More </p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="#2B76DD" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" class="read-more-next">
+                                                <path d="M9 6l6 6-6 6" />
+                                            </svg>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <img src="./images/crd1.jpeg" alt="" class="card-img">
+                                    <div class="crd-description">
+                                        <h6>Option Screener Basic</h6>
+                                        <h5>49,00 €</h5>
+                                        <p class="product-details">This product allows you to scan Cash Secured Puts,
+                                            Bear Calls and Strangles. Additionally there...</p>
+
+                                        <div class="read-more">
+                                            <p>Read More </p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="#2B76DD" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" class="read-more-next">
+                                                <path d="M9 6l6 6-6 6" />
+                                            </svg>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <img src="./images/crd1.jpeg" alt="" class="card-img">
+                                    <div class="crd-description">
+                                        <h6>Option Screener Basic</h6>
+                                        <h5>49,00 €</h5>
+                                        <p class="product-details">This product allows you to scan Cash Secured Puts,
+                                            Bear Calls and Strangles. Additionally there...</p>
+
+                                        <div class="read-more">
+                                            <p>Read More </p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="#2B76DD" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" class="read-more-next">
+                                                <path d="M9 6l6 6-6 6" />
+                                            </svg>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <img src="./images/crd1.jpeg" alt="" class="card-img">
+                                    <div class="crd-description">
+                                        <h6>Option Screener Basic</h6>
+                                        <h5>49,00 €</h5>
+                                        <p class="product-details">This product allows you to scan Cash Secured Puts,
+                                            Bear Calls and Strangles. Additionally there...</p>
+
+                                        <div class="read-more">
+                                            <p>Read More </p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="#2B76DD" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" class="read-more-next">
+                                                <path d="M9 6l6 6-6 6" />
+                                            </svg>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <img src="./images/crd1.jpeg" alt="" class="card-img">
+                                    <div class="crd-description">
+                                        <h6>Option Screener Basic</h6>
+                                        <h5>49,00 €</h5>
+                                        <p class="product-details">This product allows you to scan Cash Secured Puts,
+                                            Bear Calls and Strangles. Additionally there...</p>
+
+                                        <div class="read-more">
+                                            <p>Read More </p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="#2B76DD" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" class="read-more-next">
+                                                <path d="M9 6l6 6-6 6" />
+                                            </svg>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <img src="./images/crd1.jpeg" alt="" class="card-img">
+                                    <div class="crd-description">
+                                        <h6>Option Screener Basic</h6>
+                                        <h5>49,00 €</h5>
+                                        <p class="product-details">This product allows you to scan Cash Secured Puts,
+                                            Bear Calls and Strangles. Additionally there...</p>
+
+                                        <div class="read-more">
+                                            <p>Read More </p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="#2B76DD" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" class="read-more-next">
+                                                <path d="M9 6l6 6-6 6" />
+                                            </svg>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <img src="./images/crd1.jpeg" alt="" class="card-img">
+                                    <div class="crd-description">
+                                        <h6>Option Screener Basic</h6>
+                                        <h5>49,00 €</h5>
+                                        <p class="product-details">This product allows you to scan Cash Secured Puts,
+                                            Bear Calls and Strangles. Additionally there...</p>
+
+                                        <div class="read-more">
+                                            <p>Read More </p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="#2B76DD" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" class="read-more-next">
+                                                <path d="M9 6l6 6-6 6" />
+                                            </svg>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <img src="./images/crd1.jpeg" alt="" class="card-img">
+                                    <div class="crd-description">
+                                        <h6>Option Screener Basic</h6>
+                                        <h5>49,00 €</h5>
+                                        <p class="product-details">This product allows you to scan Cash Secured Puts,
+                                            Bear Calls and Strangles. Additionally there...</p>
+
+                                        <div class="read-more">
+                                            <p>Read More </p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="#2B76DD" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" class="read-more-next">
+                                                <path d="M9 6l6 6-6 6" />
+                                            </svg>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <img src="./images/crd1.jpeg" alt="" class="card-img">
+                                    <div class="crd-description">
+                                        <h6>Option Screener Basic</h6>
+                                        <h5>49,00 €</h5>
+                                        <p class="product-details">This product allows you to scan Cash Secured Puts,
+                                            Bear Calls and Strangles. Additionally there...</p>
+
+                                        <div class="read-more">
+                                            <p>Read More </p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="#2B76DD" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" class="read-more-next">
+                                                <path d="M9 6l6 6-6 6" />
+                                            </svg>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="left-arrow"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="#13243E" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M15 6l-6 6 6 6" />
+                                </svg>
+                            </div>
+                            <div class="right-arrow">
+
+
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#13243E"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9 6l6 6-6 6" />
+                                </svg>
+                            </div>
+                        </div>
+
+
                     </div>
                     <div class="social-Media-section">
                         <div class="description">
