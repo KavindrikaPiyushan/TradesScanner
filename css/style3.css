@@ -66,8 +66,11 @@
 .blogs-section .filter-tools .categories {
   display: flex;
   justify-content: space-between;
-  padding-left: 200px;
-  padding-right: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 800px;
 }
 
 .blogs-section .filter-tools .categories .category-btn {
@@ -324,9 +327,9 @@
   position: relative;
 }
 
-.first-blog:hover .firstBlogImg {
+/* .first-blog:hover .firstBlogImg {
   object-fit: none;
-}
+} */
 .blogTitle {
   font-size: 32px;
 }
@@ -334,6 +337,7 @@
     display: flex;
     flex-direction: row;
     margin-top:50px;
+    justify-content: center;
     gap: 12px;
     flex-wrap: wrap;
   
@@ -933,6 +937,12 @@ h6.name,p.date{
   display: none; 
 }
 
+#first-blog-header-mobile{
+  display: none;
+}
+#otherBlogAuthorHead-mobile{
+  display: none;
+}
 
 @media only screen and (max-width:767px){
   .navigation {
@@ -1115,6 +1125,90 @@ font-size: 12px;
 
 
 
+.hero-text h1{ 
+  font-size: 42px;
+  font-weight: 600;
 
-  
+}
+.hero-text{
+  top: 35%;
+}
+.blog-second-section{
+  width: 100%;
+}
+.blog-second-section p{
+  padding: 0px 32px;
+}
+.blogs-section{
+  width: 100%;
+}
+#categories{
+  display: flex;
+  width: 100%;
+  height: auto !important;
+  flex-wrap: wrap;
+
+}
+.sorting{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+#sortBy{
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+.sorting .custom-select{
+  display: flex;
+  flex-direction: column;
+}
+.first-blog{
+  display: flex;
+  flex-direction: column;
+  max-width: 362px;
+}
+.first-blog .firstBlogImg{
+  max-width: 362px;
+  border-radius:8px 8px 0 0 ;
+
+}
+#first-blog-header-mobile{
+  display: flex;
+  justify-content: space-between;
+}
+#first-blog-header{
+  display: none;
+}
+.blogDescription{
+  font-size: 16px;
+  max-height: 165px;
+  overflow: hidden;
+  margin-bottom: 0px;
+}
+.blogTitle {
+  font-size: 22px;
+}
+.blogDescriptionCover{
+  gap: 10px ;
+  padding: 15px 20px ;
+}
+.other-blog-cover{
+  margin-top: 7px;
+  align-items: center;
+  justify-content: center;
+}
+.blogs{
+  align-items: center;
+  justify-content: center;
+}
+.other-blog{
+  max-height: 746px;
+}
+.pagination{
+  width: 100%;
+}
+
+
 }

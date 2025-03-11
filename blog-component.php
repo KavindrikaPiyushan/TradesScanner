@@ -84,7 +84,7 @@ function renderBlogPost($post) {
                    Finance
             </div>
         <img src="' . $post['image'] . '" alt="" class="otherBlogImg">
-        <div class="blogDescriptionCover otherBlogDescriptionCov">
+        <div class="otherBlogDescriptionCov blogDescriptionCover " id="otherBlogDesCov">
             <div class="otherBlogHead">
                 <div class="author">
                     <p>Posted: </p>

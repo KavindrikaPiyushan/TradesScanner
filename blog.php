@@ -27,7 +27,7 @@ $currentPagePosts = array_slice($blogPosts, $offset, $itemsPerPage);
 </section>
 
 <!-- Introduction Section -->
-<section class="blog-second-section">
+<section class="blog-second-section container">
     <div class="container">
         <div class="row">
             <h5>YOUR EDGE IN THE MARKET</h5>
@@ -41,7 +41,7 @@ $currentPagePosts = array_slice($blogPosts, $offset, $itemsPerPage);
 <!-- Blogs Section -->
 <section class="blogs-section container">
     <div class="filter-tools">
-        <div class="categories">
+        <div class="categories" id="categories">
             <?php
             $categories = [
                 "Finance", 
@@ -97,7 +97,25 @@ $currentPagePosts = array_slice($blogPosts, $offset, $itemsPerPage);
             </div>
             <img src="./images/firstBlog.jpeg" alt="" class="firstBlogImg">
             <div class="blogDescriptionCover">
-                <div class="blogHead">
+            <div class="otherBlogHead" id="first-blog-header-mobile">
+                <div class="author">
+                    <p>Posted: </p>
+                    <h6>Today</h6>
+                </div>
+                <div class="reacts">
+                    <p>354</p>
+                     <svg xmlns="http://www.w3.org/2000/svg" class="heartIcon" viewBox="0 0 24 24" fill="green" stroke="green" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1 8 8 8-8 1-1a5.5 5.5 0 0 0 0-7.8z"></path>
+</svg>
+                </div>
+            </div>
+            <div class="otherBlogAuthorHead" id="otherBlogAuthorHead-mobile">
+                <img src="./images/12.png" alt="" class="authorImg">
+                <div class="author">
+                    <h5>MARCUS RUHNAU</h5>
+                </div>
+            </div>
+                <div class="blogHead" id="first-blog-header">
                     <img src="./images/12.png" alt="" class="authorImg">
                     <div class="author">
                         <p>Written By: </p>
@@ -150,7 +168,7 @@ $currentPagePosts = array_slice($blogPosts, $offset, $itemsPerPage);
             echo renderBlogSection($blogPosts);
             ?>
         </div>
-        <div class="pagination">
+        <div class="pagination container">
             <section class="pagination-section">
                 <?php echo renderPagination($currentPage, $totalPages, 'index.php', 5); ?>
             </section>
