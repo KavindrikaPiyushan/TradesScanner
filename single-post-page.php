@@ -37,7 +37,7 @@
                                     <h6>Today</h6>
                                 </div>
 
-                                <div class="reacts">
+                                <div class="reacts" id="react-mobile">
                                     <p>354</p>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="heartIcon" viewBox="0 0 24 24"
                                         fill="green" stroke="green" stroke-width="2" stroke-linecap="round"
@@ -48,6 +48,10 @@
                                     </svg>
 
                                 </div>
+                                <div class="flag" id="flag-mobile">
+                        <img src="./images/french.webp" alt="" class="flagImg">
+                        <p>3 min read</p>
+                    </div>
                             </div>
                         </div>
                         <h3 class="description-title">A pretium volutpat tincidunt dignissim diam. Porta nec sit ut
@@ -75,7 +79,7 @@
                         <h4 class="highlight-section">A pretium volutpat tincidunt dignissim diam. Porta nec sit ut
                             lobortis massa rutrum duis. Posuere mauris ut pellentesque magna sit risus donec.
                         </h4>
-                        <h4> A pretium volutpat tincidunt dignissim diam. Porta nec sit ut lobortis massa rutrum duis.
+                        <h4 class="sub-title"> A pretium volutpat tincidunt dignissim diam. Porta nec sit ut lobortis massa rutrum duis.
                             Posuere mauris ut pellentesque magna sit risus donec.
                         </h4>
                         <p>
@@ -97,7 +101,7 @@
                             ultricies odio.</p>
 
                         <img src="./images/single-post.jpeg" alt="" class='single-post-img2'>
-                        <h4> A pretium volutpat tincidunt dignissim diam. Porta nec sit ut lobortis massa rutrum duis.
+                        <h4 class="sub-title"> A pretium volutpat tincidunt dignissim diam. Porta nec sit ut lobortis massa rutrum duis.
                             Posuere mauris ut pellentesque magna sit risus donec.
                         </h4>
                         <p>
@@ -253,7 +257,7 @@
                         <div class="related-products-section ">
                             <div class="title-section">
                                 <h2 class="related-products-title">Related Products</h2>
-                                <div class="all-products-btn view-all-products"><a class="">View All Products </a> <svg
+                                <div id="view-all" class="all-products-btn view-all-products"><a class="">View All Products </a> <svg
                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                                         stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         <path d="M9 6l6 6-6 6" />
@@ -458,7 +462,14 @@
                                     <path d="M9 6l6 6-6 6" />
                                 </svg>
                             </div>
+
                         </div>
+                        <div id="view-all-mobile-btn" class="all-products-btn view-all-products"><a class="">View All Products </a> <svg
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M9 6l6 6-6 6" />
+                                    </svg>
+                                </div>
 
 
                     </div>

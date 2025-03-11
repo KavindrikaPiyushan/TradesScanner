@@ -901,6 +901,13 @@ h6.name,p.date{
   display: flex;
   justify-content: space-between;
 }
+#flag-mobile{
+  display: none;
+}
+
+#view-all-mobile-btn{
+  display: none; 
+}
 
 @media only screen and (max-width:767px){
   .navigation {
@@ -986,4 +993,95 @@ font-size: 12px;
 .blogHead .author-cover .author h5{
   font-size: 14px;
 }
+#flag-mobile{
+  display: flex;
+
+}
+#react-mobile{
+  display: none;
+}
+.reacts-cover{
+  justify-content: space-between;
+}
+.description-title{
+  font-size: 22px;
+  font-weight: 500;
+}
+.single-blog-description p{
+  font-size: 16px;
+  font-weight: 400;
+}
+.highlight-section{
+  font-size: 20px;
+  font-weight: 500;
+}
+.single-blog-description .sub-title{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.comment-section{
+  display: flex;
+  justify-content: center;
+}
+.share-section{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+ 
+}
+.share-section .reacts{
+  width: fit-content;
+  align-items: center;
+}
+
+.share-section .social-icons{
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+  width: fit-content;
+  
+}
+#view-all{
+  display: none;
+}
+.inner-content .comment-content{
+  font-size: 14px;
+  font-weight: 400;
+}
+.sample-comments-cover .comment-head .profile-pic{
+  width: 32px;
+  height: 32px;
+}
+.sample-comments-cover .comment-head .name{
+  font-size: 14px;
+  font-weight: 600;
+}
+.sample-comments-cover .comment-head .date{
+  font-size: 14px;
+  font-weight: 400;
+}
+#view-all-mobile-btn{
+  display: flex; 
+  background-color: #2B76DD;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+}
+#view-all-mobile-btn svg,#view-all-mobile-btn a{
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #fcfcfc;
+  
+
+}
+#view-all-mobile-btn svg{
+  stroke: #fcfcfc;
+}
+
+  
 }
