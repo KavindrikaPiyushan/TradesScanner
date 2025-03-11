@@ -1,30 +1,54 @@
-.hero-image {
-  background-image: url("../images/hero.jpeg");
-  height: 342px;
-  width: 100%;
-  background-size: cover;
-  background-position: 0px -485px;
-  position: relative;
+
+ .hero-section {
+    height: 342px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-bg-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-bg-img {
+    width: 100%;
+    min-width: 1200px; /* Ensures image doesn't shrink too much */
+    height: 100%;
+    object-fit: cover;
+    object-position: center -455px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Centers the image horizontally */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(19, 36, 62, 0.4);
+    z-index: 2;
 }
 
 .hero-text {
-  color: #fff;
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%);
-  text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    z-index: 3;
+    width: 90%; /* Ensures text container doesn't overflow on small screens */
+    max-width: 600px; /* Optional: limits maximum width */
 }
 
-.hero-image::before {
-  position: relative;
-  left: 0;
-  top: 0;
-  content: "";
-  background: rgba(19, 36, 62, 0.4);
-  width: 100%;
-  height: 100%;
-}
+
 
 /* Blog Introduction Section */
 .blog-second-section {
@@ -909,6 +933,7 @@ h6.name,p.date{
   display: none; 
 }
 
+
 @media only screen and (max-width:767px){
   .navigation {
     font-size: 14px;
@@ -1082,6 +1107,14 @@ font-size: 12px;
 #view-all-mobile-btn svg{
   stroke: #fcfcfc;
 }
+
+
+
+
+
+
+
+
 
   
 }

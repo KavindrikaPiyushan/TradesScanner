@@ -15,11 +15,11 @@ $currentPagePosts = array_slice($blogPosts, $offset, $itemsPerPage);
 
 
 
-
-
-
-<!-- Hero Section -->
-<section class="hero-image">
+<section class="hero-section">
+    <div class="hero-bg-container">
+        <img src="./images/hero.jpeg" alt="Hero background" class="hero-bg-img">
+        <div class="overlay"></div>
+    </div>
     <div class="hero-text">
         <h1>Tradesscanner</h1>
         <h5>BLOG & INSIGHTS</h5>
