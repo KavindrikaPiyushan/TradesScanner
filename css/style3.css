@@ -944,6 +944,10 @@ h6.name,p.date{
   display: none;
 }
 
+#view-more-mobile-btn{
+  display: none;
+}
+
 @media only screen and (max-width:767px){
   .navigation {
     font-size: 14px;
@@ -1207,7 +1211,28 @@ font-size: 12px;
   max-height: 746px;
 }
 .pagination{
-  width: 100%;
+  display: none;
+}
+
+#view-more-mobile-btn {
+  display: flex; 
+  background-color: #2B76DD;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  margin-top: 20px;
+}
+#view-more-mobile-btn  svg,#view-more-mobile-btn  a{
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #fcfcfc;
+  
+
+}
+#view-more-mobile-btn  svg{
+  stroke: #fcfcfc;
 }
 
 

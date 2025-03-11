@@ -168,6 +168,11 @@ $currentPagePosts = array_slice($blogPosts, $offset, $itemsPerPage);
             echo renderBlogSection($blogPosts);
             ?>
         </div>
+        <div id="view-more-mobile-btn" class="all-products-btn view-all-products"><a class="">View More </a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#13243E" stroke-width="2" width="24" height="24">
+  <path d="M6 9l6 6 6-6"/>
+</svg>
+
+                                </div>
         <div class="pagination container">
             <section class="pagination-section">
                 <?php echo renderPagination($currentPage, $totalPages, 'index.php', 5); ?>
